@@ -163,6 +163,14 @@
     width: 10px; height: 10px; border-radius: 50%;
     background: var(--accent); border: 2px solid var(--bg);
   }
+  .edu-item { display: flex; gap: 16px; align-items: center; }
+  .edu-logo {
+    width: 54px; height: 54px; flex-shrink: 0; border-radius: 10px;
+    background: var(--badge-bg); border: 1px dashed var(--ink-faint);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-faint); font-size: 10.5px; overflow: hidden;
+  }
+  .edu-logo img { width: 100%; height: 100%; object-fit: contain; }
   .tl-head { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; }
   .tl-head b { font-size: 15.5px; }
   .tl-date { font-size: 13px; color: var(--ink-faint); font-weight: 500; }
@@ -269,12 +277,22 @@
     <h2>Education</h2>
     <ul class="timeline">
       <li>
-        <div class="tl-head"><b>Peking University</b><span class="tl-date">Sept. 2024 – Present</span></div>
-        <p class="tl-desc">M.S. in Artificial Intelligence, expected June 2027.</p>
+        <div class="edu-item">
+          <div class="edu-logo"><!-- <img src="assets/logo-pku.png" alt="Peking University logo"> -->Logo</div>
+          <div>
+            <div class="tl-head"><b>Peking University</b><span class="tl-date">Sept. 2024 – Present</span></div>
+            <p class="tl-desc">M.S. in Artificial Intelligence, expected June 2027.</p>
+          </div>
+        </div>
       </li>
       <li>
-        <div class="tl-head"><b>Jilin University</b><span class="tl-date">Sept. 2020 – July 2024</span></div>
-        <p class="tl-desc">B.S. in Computer Science and Technology.</p>
+        <div class="edu-item">
+          <div class="edu-logo"><!-- <img src="assets/logo-jlu.png" alt="Jilin University logo"> -->Logo</div>
+          <div>
+            <div class="tl-head"><b>Jilin University</b><span class="tl-date">Sept. 2020 – July 2024</span></div>
+            <p class="tl-desc">B.S. in Computer Science and Technology.</p>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
