@@ -22,19 +22,6 @@
     --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
     --sans: "Inter", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #14161a;
-      --surface: #1b1e24;
-      --ink: #e8eaed;
-      --ink-soft: #b3bac4;
-      --ink-faint: #7d8590;
-      --accent: #e4696c;
-      --accent-soft: #2c2022;
-      --line: #2c313a;
-      --badge-bg: #242932;
-    }
-  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
@@ -97,13 +84,6 @@
   }
   .contact a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; transform: translateY(-1px); }
   .contact svg { width: 15px; height: 15px; fill: currentColor; }
-  .portrait {
-    width: 178px; height: 178px; flex-shrink: 0;
-    border-radius: 50%; object-fit: cover;
-    border: 1px solid var(--line);
-    box-shadow: 0 10px 32px rgba(0,0,0,.10);
-  }
-
   /* ---------- sections ---------- */
   section { padding: 44px 0; border-top: 1px solid var(--line); }
   h2 {
@@ -166,7 +146,6 @@
     background: var(--badge-bg); color: var(--ink-soft);
   }
   .badge.award { background: var(--accent); color: #fff; }
-  @media (prefers-color-scheme: dark) { .badge.award { color: #14161a; } }
   .pub-desc { margin-top: 9px; font-size: 13.8px; color: var(--ink-soft); }
   .pub-links { margin-top: 11px; display: flex; flex-wrap: wrap; gap: 14px; font-size: 13.5px; font-weight: 500; }
   .pub-links a.todo { color: var(--ink-faint); cursor: default; }
@@ -215,9 +194,9 @@
     <span class="links">
       <a href="#about">About</a>
       <a href="#news">News</a>
+      <a href="#education">Education</a>
       <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
     </span>
   </div>
 </nav>
@@ -247,7 +226,6 @@
         </a>
       </div>
     </div>
-    <img class="portrait" src="assets/avatar.jpg" alt="Portrait of Jiaqi Liang">
   </div>
 </header>
 
@@ -282,6 +260,22 @@
       <li><time>2026.01</time><span><b>PA3FF</b> is accepted to <span class="hl">ICLR 2026</span>.</span></li>
       <li><time>2025.12</time><span><b>A3D</b> is accepted to AAAI 2026 as an <span class="hl">Oral</span> presentation.</span></li>
       <li><time>2025.09</time><span><b>DexGarmentLab</b> is accepted to NeurIPS 2025 as a <span class="hl">Spotlight</span>.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li>
+        <div class="tl-head"><b>Peking University</b><span class="tl-date">Sept. 2024 – Present</span></div>
+        <p class="tl-desc">M.S. in Artificial Intelligence, expected June 2027.</p>
+      </li>
+      <li>
+        <div class="tl-head"><b>Jilin University</b><span class="tl-date">Sept. 2020 – July 2024</span></div>
+        <p class="tl-desc">B.S. in Computer Science and Technology.</p>
+      </li>
     </ul>
   </div>
 </section>
@@ -421,22 +415,6 @@
         <div class="tl-head"><b>PKU-Agibot Lab, Peking University</b><span class="tl-date">Sept. 2024 – Dec. 2025 · Beijing</span></div>
         <div class="tl-role">Student Researcher · Advisors: Prof. Hao Dong &amp; Dr. Ruihai Wu</div>
         <p class="tl-desc">Research on affordance-based robotic manipulation — dual-arm collaborative assembly, dexterous garment manipulation, and articulated object manipulation — leading to publications at AAAI, NeurIPS, ICLR, and ICRA.</p>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section id="education">
-  <div class="wrap">
-    <h2>Education</h2>
-    <ul class="timeline">
-      <li>
-        <div class="tl-head"><b>Peking University</b><span class="tl-date">Sept. 2024 – Present</span></div>
-        <p class="tl-desc">M.S. in Artificial Intelligence, expected June 2027.</p>
-      </li>
-      <li>
-        <div class="tl-head"><b>Jilin University</b><span class="tl-date">Sept. 2020 – July 2024</span></div>
-        <p class="tl-desc">B.S. in Computer Science and Technology.</p>
       </li>
     </ul>
   </div>
